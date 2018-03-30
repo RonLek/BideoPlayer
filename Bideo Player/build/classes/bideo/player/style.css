@@ -1,0 +1,27 @@
+#openFile{
+    -fx-background-image: url("images/folder.png");
+    -fx-background-size: 30 30;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#playButton{
+    -fx-background-image: url("images/play.png");
+    -fx-background-size: 30 30;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#pauseButton{
+    -fx-background-image: url("images/pause.png");
+    -fx-background-size: 30 30;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#stopButton{
+    -fx-background-image: url("images/stop.png");
+    -fx-background-size: 30 30;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
