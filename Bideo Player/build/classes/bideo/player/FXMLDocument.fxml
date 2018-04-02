@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -31,29 +32,37 @@
                      <HBox.margin>
                         <Insets left="5.0" />
                      </HBox.margin></Button>
-                  <Button fx:id="slowerButton" mnemonicParsing="false" onAction="#slowerVideo" text="&lt;&lt;&lt;">
+                  <Button fx:id="startButton" minHeight="32.0" minWidth="32.0" mnemonicParsing="false" onAction="#startVideo">
                      <HBox.margin>
                         <Insets left="30.0" />
                      </HBox.margin></Button>
-                  <Button fx:id="slowButton" mnemonicParsing="false" onAction="#slowVideo" text="&lt;&lt;" />
-                  <Button fx:id="fastButton" mnemonicParsing="false" onAction="#fastVideo" text="&gt;&gt;" />
-                  <Button fx:id="fasterButton" mnemonicParsing="false" onAction="#fasterVideo" text="&gt;&gt;&gt;" />
-                  <Button mnemonicParsing="false" onAction="#exitVideo" text="Exit" />
+                  <Button fx:id="slowButton" minHeight="32.0" minWidth="32.0" mnemonicParsing="false" onAction="#slowVideo" />
+                  <Button fx:id="fastButton" minHeight="32.0" minWidth="32.0" mnemonicParsing="false" onAction="#fastVideo" />
+                  <Button fx:id="endButton" minHeight="32.0" minWidth="32.0" mnemonicParsing="false" onAction="#endVideo" />
+                  <Button fx:id="exitButton" minHeight="32.0" minWidth="32.0" mnemonicParsing="false" onAction="#exitVideo">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin></Button>
                   <Slider fx:id="volume" prefHeight="14.0" prefWidth="72.0">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
                   </Slider>
+                  <Label fx:id="label" text="Time: ">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Label>
                </children>
             </HBox>
          </children>
       </VBox>
    </bottom>
    <center>
-      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <StackPane prefHeight="100.0" prefWidth="200.0">
          <children>
-            <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" />
-            <Slider fx:id="seek" StackPane.alignment="BOTTOM_CENTER" />
+            <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" StackPane.alignment="CENTER" />
+            <Slider fx:id="seek" prefHeight="0.0" prefWidth="600.0" StackPane.alignment="BOTTOM_CENTER" />
          </children>
       </StackPane>
    </center>
