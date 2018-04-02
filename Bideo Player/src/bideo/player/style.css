@@ -25,3 +25,42 @@
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
+
+#startButton{
+    -fx-background-image: url("images/start.png");
+    -fx-background-size: 30 30;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#slowButton{
+    -fx-background-image: url("images/slow.png");
+    -fx-background-size: 30 30;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#fastButton{
+    -fx-background-image: url("images/fast.png");
+    -fx-background-size: 30 30;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#endButton{
+    -fx-background-image: url("images/end.png");
+    -fx-background-size: 30 30;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#exitButton{
+    -fx-background-image: url("images/exit.png");
+    -fx-background-size: 30 30;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.slider .track{
+    -fx-background-color: #BBDEFB;
+}
